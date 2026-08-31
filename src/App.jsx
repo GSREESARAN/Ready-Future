@@ -1,4 +1,5 @@
 import "./styles/app.css";
+import { Analytics } from "@vercel/analytics/react";
 import { IntroOverlay } from "@/components/IntroOverlay";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Navbar } from "@/components/Navbar";
@@ -31,6 +32,7 @@ export default function App() {
         <ClosingCTA />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 }
