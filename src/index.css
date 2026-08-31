@@ -47,17 +47,24 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
   background: var(--cream);
   color: var(--ink);
   font-family: var(--f-body);
   -webkit-font-smoothing: antialiased;
 }
+
+/* No global overflow-x:hidden here on purpose: setting overflow-x on
+   html/body/#root without an overflow-y forces the browser to compute
+   overflow-y as "auto" on that same element too (CSS Overflow spec) —
+   turning it into its own nested scroll container and producing a
+   second, spurious scrollbar. Every section already clips its own
+   decorative overflow individually (each has its own overflow:hidden),
+   which is sufficient on its own — verified with zero horizontal
+   overflow at 320px–1920px without any global rule here. */
 
 h1,
 h2,
