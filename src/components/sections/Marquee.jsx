@@ -1,6 +1,6 @@
 const PHRASE = (
   <span>
-    Explore <i>✦</i> Experience <i>✦</i> Discover <i>✦</i> Real Exposure <i>✦</i> Real Skills{" "}
+    Explore <i>✦</i> Experience <i>✦</i> Express <i>✦</i> Real Exposure <i>✦</i> Real Skills{" "}
     <i>✦</i> Real Impact <i>✦</i>{" "}
   </span>
 );

@@ -3,11 +3,11 @@ import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import { useMagnetic } from "@/hooks/useMagnetic";
 import { useParallax } from "@/hooks/useParallax";
-import { CompassIcon, PeopleIcon, BulbIcon, SparkIcon, LogoMark } from "@/components/ui/Icons";
+import { CompassIcon, PeopleIcon, ExpressIcon, SparkIcon, LogoMark } from "@/components/ui/Icons";
 
 // the journey path the badges sit on — starts near "Explore" (top),
 // sweeps down through the left side (where the old circle layout left a
-// dead gap), ends at "Discover" (bottom right)
+// dead gap), ends at "Express" (bottom right)
 const PATH_D = "M 400 40 C 220 60, 85 145, 105 260 C 130 380, 320 460, 470 400";
 
 export function Hero() {
@@ -157,8 +157,8 @@ export function Hero() {
             <span>Experience</span>
           </div>
           <div className="hero-badge hero-badge--c hero-badge--orange">
-            <BulbIcon size={20} />
-            <span>Discover</span>
+            <ExpressIcon size={20} />
+            <span>Express</span>
           </div>
         </div>
       </div>

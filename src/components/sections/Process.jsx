@@ -3,7 +3,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useReveal } from "@/hooks/useReveal";
 import { useWordReveal } from "@/hooks/useWordReveal";
 import { useParallax } from "@/hooks/useParallax";
-import { CompassIcon, PeopleIcon, BulbIcon } from "@/components/ui/Icons";
+import { CompassIcon, PeopleIcon, ExpressIcon } from "@/components/ui/Icons";
 
 const steps = [
   {
@@ -22,9 +22,9 @@ const steps = [
   },
   {
     n: "03",
-    title: "Discover",
-    desc: "Know what fits. Reflect on the experience and choose with real information, not a guess.",
-    Icon: BulbIcon,
+    title: "Express",
+    desc: "Put it into words. Turn what clicked into a story you can tell — in an application, an interview, a conversation that matters.",
+    Icon: ExpressIcon,
     tint: "orange",
   },
 ];
@@ -86,7 +86,7 @@ export function Process() {
       <div ref={glowRef} className="section-glow section-glow--d" aria-hidden="true" />
       <div className="section-header section-header--center">
         <span ref={pillRef} className="pill pill--dark">The Process</span>
-        <h2 ref={h2Ref} className="h2">Explore. Experience. Discover.</h2>
+        <h2 ref={h2Ref} className="h2">Explore. Experience. Express.</h2>
         <p ref={ledeRef} className="lede lede--center">
           Not a lecture, not a video: a real sequence that starts with curiosity and ends with
           clarity.

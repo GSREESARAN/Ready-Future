@@ -28,23 +28,19 @@ export function PeopleIcon({ size = 28, color = "#1E8F62" }) {
   );
 }
 
-// a lightbulb, not a target — "Discover" is a realization, not a
-// bullseye — enlarged and bolder so it carries the same weight as the
-// bulb badge above it
-export function BulbIcon({ size = 28, color = "#EE5B24" }) {
+// a speech bubble, not a target — "Express" is putting the experience
+// into words, not aiming at a goal. Same solid-disc weight as the other
+// two step icons, with a bold white bubble + a talking "···" inside
+export function ExpressIcon({ size = 28, color = "#EE5B24" }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
-      <path
-        d="M12 1.2v2.4M20 5l-1.9 1.9M4 5l1.9 1.9M21.6 12.5h-2.5M5.4 12.5H2.9"
-        stroke={color}
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        opacity="0.55"
-      />
-      <circle cx="12" cy="12" r="7.6" fill={color} />
-      <rect x="8.8" y="18.4" width="6.4" height="2.6" rx="1.1" fill={color} />
-      <rect x="9.4" y="21.4" width="5.2" height="1.8" rx="0.9" fill={color} opacity="0.6" />
-      <path d="M9.1 11.1l2 2 3.6-4.1" stroke="#fff" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="12" cy="12" r="10" fill={color} />
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#fff" strokeWidth="1.3" opacity="0.35" />
+      <rect x="6" y="7" width="13" height="8.6" rx="3.2" fill="#fff" />
+      <path d="M9.6 15.6L7.6 18.8L11.9 15.8Z" fill="#fff" />
+      <circle cx="9.6" cy="11.3" r="1.1" fill={color} />
+      <circle cx="12.5" cy="11.3" r="1.1" fill={color} />
+      <circle cx="15.4" cy="11.3" r="1.1" fill={color} />
     </svg>
   );
 }
