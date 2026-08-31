@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# ACTION NEEDED AFTER DEPLOY: replace with the real *.vercel.app URL
+Sitemap: https://your-vercel-project.vercel.app/sitemap.xml

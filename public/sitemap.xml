@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ACTION NEEDED AFTER DEPLOY: update the <loc> below to the real
+     *.vercel.app URL (or custom domain) — matches the placeholder in
+     index.html's Open Graph/canonical tags. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://your-vercel-project.vercel.app/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

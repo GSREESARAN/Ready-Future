@@ -1,0 +1,103 @@
+/* ---- READY design tokens ---- */
+:root {
+  --cream: #f8f1e6;
+  --cream-soft: #fdf9f3;
+  --ink: #221e1a;
+  --ink-soft: #55504a;
+  --muted: #6b6459;
+  --border: #e4d9c8;
+
+  --accent: #ee5b24;
+  --accent-dark: #c8471a;
+  --accent-tint: #fce8db;
+
+  --green: #1e8f62;
+  --green-tint: #dceee4;
+
+  --f-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --f-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --f-hand: "Permanent Marker", cursive;
+  --f-wordmark: "Abril Fatface", Georgia, "Times New Roman", serif;
+
+  --nav-height: 76px;
+  --edge: 72px;
+
+  /* shared corner-radius scale — the large decorative shapes (hero card,
+     problem card, compare-bar) keep their own bespoke values on purpose,
+     but the repeated UI pieces (buttons, cards, chips, pills) share this */
+  --radius-xs: 2px;
+  --radius-sm: 10px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* branded, high-visibility focus ring — an outline plus a soft outer
+   glow so it reads clearly against both the light and dark sections */
+:focus-visible {
+  outline: 2.5px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(238, 91, 36, 0.22);
+  border-radius: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--f-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--f-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-dark);
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
